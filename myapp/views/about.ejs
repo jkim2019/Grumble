@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ejs: html that we can stick javascript into. add <%= %> when we want to use variables-->
+    <!-- only use <% %> when using javascript -->
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+    <% include templates/header.ejs %>
+
+    <h3><%= title %></h3>
+    <p>Hi my name is <%= name %>. I like mac & cheese.</p>
+
+</body>
+</html>

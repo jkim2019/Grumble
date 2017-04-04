@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include templates/header.ejs %>
+</head>
+
+<body>
+<div class="container">
+    <div class="page-header">
+        <button type="button" class="btn btn-info"><a href="/" id="backbutton">Back</a></button>
+        <div id="results-header"><h1>Results</h1></div>
+    </div>
+    <% result.forEach(business => { %>
+    <div class="col-xs-3" id="result-cells">
+        <a></a>
+        <a href="<%= business.url %>" target="_blank" alt="business_image" class="hvr-grow-rotate"><img src="<%= business.image_url %>" class="bsn-image"></a>
+        <p class="b-name"><%= business.name %></p>
+        <p class="b-phone">Phone: <%= business.display_phone %></p>
+        <p class="b-dist">Dist: <%= Math.round(business.distance*0.00621371*100)/100 %> mi</p>
+    </div>
+    <% }); %>
+</div>
+</body>
+
+</html>

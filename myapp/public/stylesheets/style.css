@@ -1,0 +1,56 @@
+.cell {
+    padding: 3%;
+    border: #000000 1pt solid;
+    display: inline-block;
+    text: inline-center;
+    margin-bottom: 2%;
+}
+.categories .row {
+    margin-left: 5%;
+}
+.categories .row p {
+    text-align: center;
+}
+.prices .row {
+    margin-left: 5%;
+}
+.prices .row p {
+    text-align: center;
+}
+.b-name {
+    font-weight: bold;
+}
+#search-box {
+    display: inline-block;
+}
+#submit-button {
+    display: inline-block;
+}
+#result-cells {
+    margin-bottom: 4%;
+    height: 240px;
+    text-align: center;
+}
+.input-group {
+    display: inline-block;
+}
+.input-group .form-control {
+    margin-bottom: 2%;
+}
+.bsn-image {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+#backbutton {
+    display: inline-block;
+    color: white;
+}
+#results-header {
+    text-align: center;
+}
+#error-message {
+    text-align: center;
+}
